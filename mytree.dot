@@ -1,0 +1,36 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="num_pipe__ssc_p <= 63.7\nentropy = 0.895\nsamples = 215\nvalue = [67, 148]\nclass = 1"] ;
+1 [label="num_pipe__hsc_p <= 58.5\nentropy = 0.94\nsamples = 84\nvalue = [54, 30]\nclass = 0"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="entropy = 0.0\nsamples = 29\nvalue = [29, 0]\nclass = 0"] ;
+1 -> 2 ;
+3 [label="num_pipe__ssc_p <= 55.34\nentropy = 0.994\nsamples = 55\nvalue = [25, 30]\nclass = 1"] ;
+1 -> 3 ;
+4 [label="entropy = 0.722\nsamples = 15\nvalue = [12, 3]\nclass = 0"] ;
+3 -> 4 ;
+5 [label="num_pipe__mba_p <= 59.485\nentropy = 0.91\nsamples = 40\nvalue = [13, 27]\nclass = 1"] ;
+3 -> 5 ;
+6 [label="entropy = 0.702\nsamples = 21\nvalue = [4, 17]\nclass = 1"] ;
+5 -> 6 ;
+7 [label="entropy = 0.998\nsamples = 19\nvalue = [9, 10]\nclass = 1"] ;
+5 -> 7 ;
+8 [label="num_pipe__hsc_p <= 71.99\nentropy = 0.467\nsamples = 131\nvalue = [13, 118]\nclass = 1"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="num_pipe__degree_p <= 67.2\nentropy = 0.66\nsamples = 76\nvalue = [13, 63]\nclass = 1"] ;
+8 -> 9 ;
+10 [label="num_pipe__mba_p <= 61.585\nentropy = 0.888\nsamples = 36\nvalue = [11, 25]\nclass = 1"] ;
+9 -> 10 ;
+11 [label="entropy = 0.297\nsamples = 19\nvalue = [1, 18]\nclass = 1"] ;
+10 -> 11 ;
+12 [label="entropy = 0.977\nsamples = 17\nvalue = [10, 7]\nclass = 0"] ;
+10 -> 12 ;
+13 [label="cat_pipe__degree_t_Comm&Mgmt <= 0.5\nentropy = 0.286\nsamples = 40\nvalue = [2, 38]\nclass = 1"] ;
+9 -> 13 ;
+14 [label="entropy = 0.544\nsamples = 16\nvalue = [2, 14]\nclass = 1"] ;
+13 -> 14 ;
+15 [label="entropy = 0.0\nsamples = 24\nvalue = [0, 24]\nclass = 1"] ;
+13 -> 15 ;
+16 [label="entropy = 0.0\nsamples = 55\nvalue = [0, 55]\nclass = 1"] ;
+8 -> 16 ;
+}
